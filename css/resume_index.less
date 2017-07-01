@@ -1,10 +1,13 @@
 @import url(bootstrap.less);
+@themeColor:#26B1B6;
 body{
   font-family: cursive,'Microsoft YaHei','Lato', sans-serif;
   .section-title{
-    padding-top:50px;
+    padding-top:100px;
     h2{
-      font-weight:bold;
+      font-weight:600;
+      font-size:3em;
+      text-shadow: 2px 2px #ccc;
     }
     hr {
       width: 70px;
@@ -12,11 +15,32 @@ body{
       background: #e87e04;
     }
   }
+  .section-content{
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+  .section-content p{
+    text-align: center;
+    font-size:1.2em;
+  }
+  a.btn{
+    opacity:0.7;
+  }
   p{
     color:rgb(44,62,80);
   }
   #top-intro{
     background:url(../img/intro-bg.jpg) no-repeat center center;
+    background-size:cover;
+    .top-cover{
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      background:rgba(255,255,255,0.3);
+      z-index:0;
+    }
     #changeLanguage{
       position:absolute;
       top:50px;
@@ -49,17 +73,16 @@ body{
       a{
         margin:1em 0;
         width:80%;
-        color:#76818D;
         background-color:#EBEBEF;
       }
       a:hover{
-        background-color:#2C3E50;
+        background-color:@themeColor;
         color:#fff;
       }
     }
   }
   #nav{
-    background:#2C3E50;
+    background:@themeColor;
     border:none;
     border-radius:0;
     margin:0;
@@ -84,13 +107,10 @@ body{
       max-width:200px;
     }
     .row>div:last-child p{
-      margin:15px auto;
-      a{
-        color:#76818D;
-      }
+      margin:60px auto;
       a:hover{
         color:#EEEEEE;
-        background:#2C3E50;
+        background:@themeColor;
       }
     }
   }
@@ -137,15 +157,15 @@ body{
       }
       .skill-circle-right {
         right: 0;
-        border-top: 12px solid #2C3E50;
-        border-right: 12px solid #2C3E50;
+        border-top: 12px solid @themeColor;
+        border-right: 12px solid @themeColor;
         transform: rotate(45deg);
         animation: skillProgress_right 2s ease-in;
       }
       .skill-circle-left {
         left: 0;
-        border-left: 12px solid #2C3E50;
-        border-bottom: 12px solid #2C3E50;
+        border-left: 12px solid @themeColor;
+        border-bottom: 12px solid @themeColor;
         transform: rotate(45deg);
       }
       .skill-HTML5{

@@ -6768,21 +6768,44 @@ body {
   font-family: cursive, 'Microsoft YaHei', 'Lato', sans-serif;
 }
 body .section-title {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 body .section-title h2 {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 3em;
+  text-shadow: 2px 2px #ccc;
 }
 body .section-title hr {
   width: 70px;
   height: 4px;
   background: #e87e04;
 }
+body .section-content {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+body .section-content p {
+  text-align: center;
+  font-size: 1.2em;
+}
+body a.btn {
+  opacity: 0.7;
+}
 body p {
   color: #2c3e50;
 }
 body #top-intro {
   background: url(../img/intro-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+body #top-intro .top-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
 }
 body #top-intro #changeLanguage {
   position: absolute;
@@ -6817,15 +6840,14 @@ body #top-intro div.intro-text p {
 body #top-intro div.intro-text a {
   margin: 1em 0;
   width: 80%;
-  color: #76818D;
   background-color: #EBEBEF;
 }
 body #top-intro div.intro-text a:hover {
-  background-color: #2C3E50;
+  background-color: #26B1B6;
   color: #fff;
 }
 body #nav {
-  background: #2C3E50;
+  background: #26B1B6;
   border: none;
   border-radius: 0;
   margin: 0;
@@ -6851,14 +6873,11 @@ body #about .row > div:first-child img {
   max-width: 200px;
 }
 body #about .row > div:last-child p {
-  margin: 15px auto;
-}
-body #about .row > div:last-child p a {
-  color: #76818D;
+  margin: 60px auto;
 }
 body #about .row > div:last-child p a:hover {
   color: #EEEEEE;
-  background: #2C3E50;
+  background: #26B1B6;
 }
 body #skills {
   background: url(../img/achivements-bg.jpg) no-repeat fixed 0 0;
@@ -6905,15 +6924,15 @@ body #skills .row .skill .skill-circle {
 }
 body #skills .row .skill .skill-circle-right {
   right: 0;
-  border-top: 12px solid #2C3E50;
-  border-right: 12px solid #2C3E50;
+  border-top: 12px solid #26B1B6;
+  border-right: 12px solid #26B1B6;
   transform: rotate(45deg);
   animation: skillProgress_right 2s ease-in;
 }
 body #skills .row .skill .skill-circle-left {
   left: 0;
-  border-left: 12px solid #2C3E50;
-  border-bottom: 12px solid #2C3E50;
+  border-left: 12px solid #26B1B6;
+  border-bottom: 12px solid #26B1B6;
   transform: rotate(45deg);
 }
 body #skills .row .skill .skill-HTML5 {
