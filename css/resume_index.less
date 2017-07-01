@@ -1,5 +1,6 @@
 @import url(bootstrap.less);
 body{
+  font-family: cursive,'Microsoft YaHei','Lato', sans-serif;
   .section-title{
     padding-top:50px;
     h2{
@@ -12,27 +13,42 @@ body{
     }
   }
   p{
-    color:#76818D;
+    color:rgb(44,62,80);
   }
   #top-intro{
     background:url(../img/intro-bg.jpg) no-repeat center center;
-    background-size:105%;
+    #changeLanguage{
+      position:absolute;
+      top:50px;
+      right:50px;
+      a{
+        background-color:#EBEBEF;
+      }
+    }
     div.intro-text{
-      //margin-top:300px;margin-bottom:200px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
       padding-top:20%;
       padding-bottom:20%;
       text-align:center;
+      .row>div{
+        text-align: center;
+      }
       h1{
-        font-size:5em;
-        font-weight:600;
+        font-family: cursive,'Lato', sans-serif;
+        font-size:6.5em;
+        font-weight:400;
         color:#2C3E50;
       }
       p{
-        font-size:20px;
+        font-size:2.5em;
         margin:30px 0 30px 0;
       }
       a{
-        margin:0 1em;
+        margin:1em 0;
+        width:80%;
         color:#76818D;
         background-color:#EBEBEF;
       }

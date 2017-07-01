@@ -4,6 +4,10 @@
 function main(){
     (function(){
         'use strict';
+        //首页面响应式高度
+        var windowHeight=$(window).height();
+        $("#top-intro").css("height",windowHeight);
+
         //滚动条滚动动作
         $(window).scroll(
             function () {
@@ -45,6 +49,7 @@ function main(){
                 }
             }
         );
+
         //平滑跳转函数
         function jumpSmooth($obj){
             $obj.each(function(i,dom){
@@ -57,6 +62,7 @@ function main(){
             });
         }
         jumpSmooth($("body a.jump"));
+
         //图片轮播
         function carousel($obj,n,interval){
             var index=0;
