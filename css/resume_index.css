@@ -6949,10 +6949,10 @@ body #skills .row .skill .skill-circle-left {
   border-bottom: 12px solid #26B1B6;
   transform: rotate(45deg);
 }
-body #skills .row .skill .skill-HTML5 {
+body #skills .row .skill .skill-HTML {
   animation: skillProgress_HTML 2s ease-out forwards;
 }
-body #skills .row .skill .skill-CSS3 {
+body #skills .row .skill .skill-CSS {
   animation: skillProgress_CSS 2s ease-out forwards;
 }
 body #skills .row .skill .skill-bootstrap {
@@ -7033,8 +7033,8 @@ body #skills .row .skill .skill-vueJS {
 body #portfolio {
   padding-top: 50px;
   padding-bottom: 100px;
-  background: #839980;
-  color: #fffcff;
+  background: #d8f2da;
+  color: #281125;
 }
 body #portfolio .portfolio_container {
   position: relative;
@@ -7134,6 +7134,10 @@ body #portfolio .portfolio_content span {
 }
 body #resume {
   background: url(../img/achivements-bg.jpg) no-repeat fixed 0 0;
+  padding-top: 100px;
+}
+body #resume .section-title {
+  padding-top: 0;
 }
 body #resume .timeline {
   list-style: none;
@@ -7234,9 +7238,8 @@ body #testimonials .myCarousel .myCarousel-pointer .active {
 }
 body #contact {
   padding-bottom: 100px;
-  min-height: 750px;
-  background: #f4c480;
-  color: #fff;
+  background: #d8f2da;
+  color: #281125;
   position: relative;
 }
 body #contact .container {
