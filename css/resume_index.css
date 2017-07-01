@@ -7282,8 +7282,6 @@ body #contact .section-title hr {
     margin-left: 30%;
   }
   body #resume .timeline .timeline-line {
-    position: absolute;
-    height: 170px;
     left: 50px;
   }
 }
