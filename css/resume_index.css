@@ -7245,6 +7245,9 @@ body #contact .section-title {
 body #contact .section-title hr {
   color: #E87E04;
 }
+body #contact .my-email p {
+  font-size: 2.5em;
+}
 @media screen and (max-width: 992px) and (min-width: 768px) {
   body #resume .timeline .timeline-content {
     width: 250px;
@@ -7283,5 +7286,8 @@ body #contact .section-title hr {
   }
   body #resume .timeline .timeline-line {
     left: 50px;
+  }
+  body #contact .my-email p {
+    font-size: 1.5em;
   }
 }
