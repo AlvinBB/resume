@@ -5,9 +5,13 @@ function main(){
     (function(){
         'use strict';
         //首页面响应式高度
-        var windowHeight=$(window).height();
-        $("#top-intro").css("height",windowHeight);
-        $("#contact").css("height",windowHeight);
+        function responsiveHeight(){
+            var windowHeight=$(window).height();
+            $("#top-intro").css("height",windowHeight);
+            $("#contact").css("height",windowHeight);
+        }
+        responsiveHeight();
+        $(window).resize(responsiveHeight)
 
         //滚动条滚动动作
         $(window).scroll(

@@ -7247,7 +7247,10 @@ body #contact .section-title hr {
     background: url(../img/intro-bg-sm.jpg) no-repeat center center;
   }
   body #top-intro div.intro-text h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+  }
+  body #top-intro div.intro-text p {
+    font-size: 1.5em;
   }
   body #resume .timeline .timeline-content {
     width: 70%;
