@@ -28,6 +28,7 @@ body{
     padding:5px;
   }
   #top-intro{
+    font-family: cursive,'Lato', sans-serif;
     background:url(../img/intro-bg.jpg) no-repeat center center;
     background-size:cover;
     .top-cover{
@@ -60,7 +61,6 @@ body{
         text-align: center;
       }
       h1{
-        font-family: cursive,'Lato', sans-serif;
         font-size:6.5em;
         font-weight:400;
         color:#2C3E50;
@@ -372,7 +372,8 @@ body{
       }
       .timeline-line{
         position:absolute;
-        height:100px;
+        height:100%;
+        z-index:0;
         left:50%;
         bottom:0;
         border:1px solid #ddd;
@@ -388,9 +389,10 @@ body{
         background:#fff;
         padding-top:40px;
         left:50%;
+        z-index:1;
       }
       .timeline-content{
-        position:absolute;
+        float:left;
         width:380px;
       }
       .timeline-heading{
@@ -410,9 +412,15 @@ body{
       }
       .timeline-even{
         .timeline-content{
+          float:right;
           text-align:left;
           right:0;
         }
+      }
+      .timeline-odd:after,.timeline-even:after{
+        content:"";
+        display:block;
+        clear:both;
       }
     }
   }
@@ -500,6 +508,11 @@ body{
 }
 @media screen and (max-width: 767px) {
   body{
+    .section-title{
+      h2{
+        font-size:1.5em;
+      }
+    }
     #top-intro{
       height:450px;
       background:url(../img/intro-bg-sm.jpg) no-repeat center center;

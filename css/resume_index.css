@@ -6793,6 +6793,7 @@ body a.btn {
   padding: 5px;
 }
 body #top-intro {
+  font-family: cursive, 'Lato', sans-serif;
   background: url(../img/intro-bg.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -6827,7 +6828,6 @@ body #top-intro div.intro-text .row > div {
   text-align: center;
 }
 body #top-intro div.intro-text h1 {
-  font-family: cursive, 'Lato', sans-serif;
   font-size: 6.5em;
   font-weight: 400;
   color: #2C3E50;
@@ -7130,7 +7130,8 @@ body #resume .timeline li {
 }
 body #resume .timeline .timeline-line {
   position: absolute;
-  height: 100px;
+  height: 100%;
+  z-index: 0;
   left: 50%;
   bottom: 0;
   border: 1px solid #ddd;
@@ -7147,9 +7148,10 @@ body #resume .timeline .timeline-time {
   background: #fff;
   padding-top: 40px;
   left: 50%;
+  z-index: 1;
 }
 body #resume .timeline .timeline-content {
-  position: absolute;
+  float: left;
   width: 380px;
 }
 body #resume .timeline .timeline-heading h4 {
@@ -7164,8 +7166,15 @@ body #resume .timeline .timeline-odd .timeline-content {
   left: 0;
 }
 body #resume .timeline .timeline-even .timeline-content {
+  float: right;
   text-align: left;
   right: 0;
+}
+body #resume .timeline .timeline-odd:after,
+body #resume .timeline .timeline-even:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 body #testimonials {
   padding-bottom: 50px;
@@ -7242,6 +7251,9 @@ body #contact .section-title hr {
   }
 }
 @media screen and (max-width: 767px) {
+  body .section-title h2 {
+    font-size: 1.5em;
+  }
   body #top-intro {
     height: 450px;
     background: url(../img/intro-bg-sm.jpg) no-repeat center center;
