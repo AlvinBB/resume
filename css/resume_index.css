@@ -6790,9 +6790,7 @@ body .section-content p {
 }
 body a.btn {
   opacity: 0.7;
-}
-body p {
-  color: #2c3e50;
+  padding: 5px;
 }
 body #top-intro {
   background: url(../img/intro-bg.jpg) no-repeat center center;
@@ -6809,10 +6807,11 @@ body #top-intro .top-cover {
 }
 body #top-intro #changeLanguage {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 2%;
+  right: 2%;
 }
 body #top-intro #changeLanguage a {
+  padding: 5px 8px;
   background-color: #EBEBEF;
 }
 body #top-intro div.intro-text {
@@ -6865,8 +6864,9 @@ body #nav ul.navbar-nav li:hover a {
   color: #D67E04;
 }
 body #about {
-  padding-bottom: 100px;
-  background: #F8F9FA;
+  padding-bottom: 50px;
+  background: #d8f2da;
+  color: #281125;
 }
 body #about .row > div:first-child img {
   border-radius: 50%;
@@ -6880,8 +6880,22 @@ body #about .row > div:last-child p a:hover {
   background: #26B1B6;
 }
 body #skills {
-  background: url(../img/achivements-bg.jpg) no-repeat fixed 0 0;
+  background: url(../img/skills-bg.jpg) no-repeat fixed 0 0;
+  position: relative;
   padding-bottom: 50px;
+}
+body #skills h2 {
+  position: relative;
+  z-index: 1;
+}
+body #skills .skills-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
 }
 body #skills .row .skill {
   width: 152px;
@@ -6968,7 +6982,7 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(27deg);
+    transform: rotate(-9deg);
   }
 }
 @keyframes skillProgress_CSS {
@@ -6977,7 +6991,7 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(9deg);
+    transform: rotate(-27deg);
   }
 }
 @keyframes skillProgress_bootstrap {
@@ -6986,7 +7000,7 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(-9deg);
+    transform: rotate(-63deg);
   }
 }
 @keyframes skillProgress_JS {
@@ -6995,7 +7009,7 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(-9deg);
+    transform: rotate(-63deg);
   }
 }
 @keyframes skillProgress_jQuery {
@@ -7004,7 +7018,7 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(-27deg);
+    transform: rotate(-63deg);
   }
 }
 @keyframes skillProgress_vue {
@@ -7013,12 +7027,14 @@ body #skills .row .skill .skill-vueJS {
     transform: rotate(-135deg);
   }
   100% {
-    transform: rotate(-36deg);
+    transform: rotate(-135deg);
   }
 }
 body #portfolio {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+  background: #839980;
+  color: #fffcff;
 }
 body #portfolio .portfolio_container {
   position: relative;
@@ -7109,6 +7125,7 @@ body #portfolio .portfolio_content h3 {
 }
 body #portfolio .portfolio_content p {
   margin: 40px auto;
+  padding: 0 40px;
   color: #fff;
   font-size: 0.6em;
 }
@@ -7167,6 +7184,8 @@ body #resume .timeline .timeline-even .timeline-content {
 }
 body #testimonials {
   padding-bottom: 50px;
+  background: #e4d8ee;
+  color: #1c2a10;
 }
 body #testimonials .myCarousel-outer {
   width: 100%;
@@ -7214,17 +7233,24 @@ body #testimonials .myCarousel .myCarousel-pointer .active {
   background: #E87E04;
 }
 body #contact {
-  background: url(../img/contact-bg.jpg) no-repeat fixed 0 0;
+  padding-bottom: 100px;
+  min-height: 750px;
+  background: #f4c480;
   color: #fff;
+  position: relative;
 }
-body #contact .section-title h2 {
-  color: #fff;
+body #contact .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+body #contact .section-title {
+  padding: 0;
 }
 body #contact .section-title hr {
   color: #E87E04;
-}
-body #contact .section-title p {
-  color: #fff;
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
   body #resume .timeline .timeline-content {
@@ -7234,8 +7260,7 @@ body #contact .section-title p {
 @media screen and (max-width: 767px) {
   body #top-intro {
     height: 450px;
-    background-size: 750px;
-    background-position: 90% center;
+    background: url(../img/intro-bg-sm.jpg) no-repeat center center;
   }
   body #top-intro div.intro-text h1 {
     font-size: 3em;

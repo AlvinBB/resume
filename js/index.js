@@ -7,6 +7,7 @@ function main(){
         //首页面响应式高度
         var windowHeight=$(window).height();
         $("#top-intro").css("height",windowHeight);
+        $("#contact").css("height",windowHeight);
 
         //滚动条滚动动作
         $(window).scroll(
