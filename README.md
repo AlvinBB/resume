@@ -1,2 +1,1 @@
-# 我的简历
-预览请点击 https://alvinbb.github.io/resume/index.html
+# It's not maintained for long time.
